@@ -1,0 +1,25 @@
+{
+    "name": "Anlu.Save.Newtonsoft",
+    "rootNamespace": "Anlu.Save.Serialization",
+    "references": [
+        "Anlu.Save.Core",
+        "Newtonsoft.Json"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "ANLU_SAVE_USE_NEWTONSOFT"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.nuget.newtonsoft-json",
+            "expression": "2.0.0",
+            "define": "ANLU_SAVE_USE_NEWTONSOFT"
+        }
+    ],
+    "noEngineReferences": false
+}

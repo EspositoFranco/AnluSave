@@ -1,0 +1,25 @@
+# Normaliza finales de línea: LF en el repo, checkout nativo por plataforma.
+* text=auto
+
+# Código y texto → LF explícito (evita churn CRLF/LF entre Windows y CI).
+*.cs        text eol=lf diff=csharp
+*.asmdef    text eol=lf
+*.json      text eol=lf
+*.jslib     text eol=lf
+*.md        text eol=lf
+*.meta      text eol=lf
+*.shader    text eol=lf
+*.txt       text eol=lf
+*.yml       text eol=lf
+
+# Assets binarios de Unity → nunca normalizar ni difear como texto.
+*.png       binary
+*.jpg       binary
+*.psd       binary
+*.fbx       binary
+*.wav       binary
+*.mp3       binary
+*.ogg       binary
+*.unity     -text merge=unityyamlmerge
+*.prefab    -text merge=unityyamlmerge
+*.asset     -text merge=unityyamlmerge

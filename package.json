@@ -1,0 +1,26 @@
+{
+  "name": "com.anlu.save",
+  "version": "0.1.0",
+  "displayName": "Anlu Save",
+  "description": "Motor de guardado (Save) reutilizable y multiplataforma para Unity. Genérico sobre tu modelo de datos (ISaveService<T>), con storage intercambiable (File/JSON, PlayerPrefs, WebGL/IndexedDB, Encriptado AES+HMAC), serialización pinchable (JsonUtility por defecto, Newtonsoft opcional), migración de esquema como cadena de objetos, y política de escritura confiable (debounce + flush on pause/focus/quit + escritura atómica + backup). Corre igual en editor, standalone, móvil y portal web sin tocar el código de juego.",
+  "unity": "2021.3",
+  "author": {
+    "name": "Franco Esposito"
+  },
+  "keywords": [
+    "save",
+    "persistence",
+    "serialization",
+    "migration",
+    "storage",
+    "webgl",
+    "encryption"
+  ],
+  "samples": [
+    {
+      "displayName": "Basic Save",
+      "description": "Wiring mínimo del motor: FileStorage + JsonUtility + SaveFlushBehaviour, con un modelo de save de ejemplo.",
+      "path": "Samples~/BasicSave"
+    }
+  ]
+}
